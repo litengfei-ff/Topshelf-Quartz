@@ -1,0 +1,90 @@
+2017-11-29 15:28:11,222 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 12345Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 12345Service
+2017-11-29 15:28:11,237 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+2017-11-29 15:28:11,450 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+2017-11-29 15:28:11,463 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+2017-11-29 15:28:11,686 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The 12345Service service is now running, press Control+C to exit.
+2017-11-29 15:28:11,723 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - start
+2017-11-29 15:28:12,668 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - start
+2017-11-29 15:28:13,010 [MyQuartz_Worker-1] ERROR Topshelf_Quartz.MyJob - 出现异常：没有终结点在侦听可以接受消息的 http://10.6.2.50:8080/webservice/webservice.asmx。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+2017-11-29 15:28:13,021 [MyQuartz_Worker-1] ERROR Topshelf_Quartz.MyJob - 
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 116
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.HelloWorld() 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 122
+   在 Topshelf_Quartz.MyJob.Execute(IJobExecutionContext context) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\MyJob.cs:行号 28
+2017-11-29 15:28:13,668 [MyQuartz_Worker-3] INFO  Topshelf_Quartz.MyJob - start
+2017-11-29 15:28:13,688 [MyQuartz_Worker-2] ERROR Topshelf_Quartz.MyJob - 出现异常：没有终结点在侦听可以接受消息的 http://10.6.2.50:8080/webservice/webservice.asmx。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+2017-11-29 15:28:13,690 [MyQuartz_Worker-2] ERROR Topshelf_Quartz.MyJob - 
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 116
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.HelloWorld() 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 122
+   在 Topshelf_Quartz.MyJob.Execute(IJobExecutionContext context) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\MyJob.cs:行号 28
+2017-11-29 15:28:14,647 [MyQuartz_Worker-3] ERROR Topshelf_Quartz.MyJob - 出现异常：没有终结点在侦听可以接受消息的 http://10.6.2.50:8080/webservice/webservice.asmx。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+2017-11-29 15:28:14,652 [MyQuartz_Worker-3] ERROR Topshelf_Quartz.MyJob - 
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 116
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.HelloWorld() 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 122
+   在 Topshelf_Quartz.MyJob.Execute(IJobExecutionContext context) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\MyJob.cs:行号 28
+2017-11-29 15:28:14,668 [MyQuartz_Worker-4] INFO  Topshelf_Quartz.MyJob - start
+2017-11-29 15:28:15,639 [MyQuartz_Worker-4] ERROR Topshelf_Quartz.MyJob - 出现异常：没有终结点在侦听可以接受消息的 http://10.6.2.50:8080/webservice/webservice.asmx。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+2017-11-29 15:28:15,645 [MyQuartz_Worker-4] ERROR Topshelf_Quartz.MyJob - 
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request)
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.Topshelf_Quartz.ServiceReference.WebServiceSoap.HelloWorld(HelloWorldRequest request) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 116
+   在 Topshelf_Quartz.ServiceReference.WebServiceSoapClient.HelloWorld() 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\Service References\ServiceReference\Reference.cs:行号 122
+   在 Topshelf_Quartz.MyJob.Execute(IJobExecutionContext context) 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\MyJob.cs:行号 28
+2017-11-29 15:28:15,669 [MyQuartz_Worker-5] INFO  Topshelf_Quartz.MyJob - start

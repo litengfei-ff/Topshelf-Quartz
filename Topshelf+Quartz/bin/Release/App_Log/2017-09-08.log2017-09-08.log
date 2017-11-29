@@ -1,0 +1,46 @@
+2017-09-08 11:25:37,734 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 1235Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 1235Service
+2017-09-08 11:25:37,750 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+2017-09-08 11:25:37,869 [1] ERROR Topshelf.HostFactory - An exception occurred creating the host
+Topshelf.ServiceBuilderException: An exception occurred creating the service: ServiceRunner ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Quartz.SchedulerException: Unable to bind scheduler to remoting. ---> System.Net.Sockets.SocketException: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 System.Net.Sockets.TcpListener.Start(Int32 backlog)
+   在 System.Runtime.Remoting.Channels.ExclusiveTcpListener.Start(Boolean exclusiveAddressUse)
+   在 System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StartListening(Object data)
+   在 System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.SetupChannel()
+   在 System.Runtime.Remoting.Channels.Tcp.TcpServerChannel..ctor(IDictionary properties, IServerChannelSinkProvider sinkProvider, IAuthorizeRemotingConnection authorizeCallback)
+   在 System.Runtime.Remoting.Channels.Tcp.TcpChannel..ctor(IDictionary properties, IClientChannelSinkProvider clientSinkProvider, IServerChannelSinkProvider serverSinkProvider)
+   在 Quartz.Simpl.RemotingSchedulerExporter.RegisterRemotingChannelIfNeeded() 位置 c:\projects\quartznet\src\Quartz\Simpl\RemotingSchedulerExporter.cs:行号 120
+   在 Quartz.Simpl.RemotingSchedulerExporter.Bind(IRemotableQuartzScheduler scheduler) 位置 c:\projects\quartznet\src\Quartz\Simpl\RemotingSchedulerExporter.cs:行号 71
+   在 Quartz.Core.QuartzScheduler.Bind() 位置 c:\projects\quartznet\src\Quartz\Core\QuartzScheduler.cs:行号 373
+   在 Quartz.Core.QuartzScheduler.Initialize() 位置 c:\projects\quartznet\src\Quartz\Core\QuartzScheduler.cs:行号 352
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Quartz.Core.QuartzScheduler.Initialize() 位置 c:\projects\quartznet\src\Quartz\Core\QuartzScheduler.cs:行号 356
+   在 Quartz.Impl.StdSchedulerFactory.Instantiate() 位置 c:\projects\quartznet\src\Quartz\Impl\StdSchedulerFactory.cs:行号 1040
+   在 Quartz.Impl.StdSchedulerFactory.GetScheduler() 位置 c:\projects\quartznet\src\Quartz\Impl\StdSchedulerFactory.cs:行号 1121
+   在 Topshelf_Quartz.ServiceRunner..ctor() 位置 E:\Project\Topshelf+Quartz\Topshelf+Quartz\ServiceRunner.cs:行号 18
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   在 System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   在 System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   在 System.Activator.CreateInstance[T]()
+   在 Topshelf.ServiceExtensions.<>c__2`1.<Service>b__2_0(HostSettings x)
+   在 Topshelf.Builders.ControlServiceBuilder`1.Build(HostSettings settings)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Topshelf.Builders.ControlServiceBuilder`1.Build(HostSettings settings)
+   在 Topshelf.Builders.RunBuilder.Build(ServiceBuilder serviceBuilder)
+   在 Topshelf.HostConfigurators.HostConfiguratorImpl.CreateHost()
+   在 Topshelf.HostFactory.New(Action`1 configureCallback)
+2017-09-08 11:26:13,366 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 1235Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 1235Service
+2017-09-08 11:26:13,380 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+2017-09-08 11:26:13,507 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+2017-09-08 11:26:13,514 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+2017-09-08 11:26:13,706 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The 1235Service service is now running, press Control+C to exit.

@@ -1,0 +1,53 @@
+2017-09-08 10:58:21,580 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 1235Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 1235Service
+  Topshelf.HostFactory:2017-09-08 10:58:21,608 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+  Topshelf.HostConfigurators.HostConfiguratorImpl:2017-09-08 10:58:21,749 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+  Topshelf.Builders.RunBuilder:2017-09-08 10:58:21,755 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+  Topshelf.Hosts.ConsoleRunHost:2017-09-08 10:58:21,956 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The 1235Service service is now running, press Control+C to exit.
+  Topshelf.Hosts.ConsoleRunHost:2017-09-08 10:58:21,980 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - start
+  Topshelf_Quartz.MyJob:2017-09-08 10:58:21,981 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - end
+  Topshelf_Quartz.MyJob:2017-09-08 10:58:31,937 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - start
+  Topshelf_Quartz.MyJob:2017-09-08 10:58:31,938 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - end
+  Topshelf_Quartz.MyJob:2017-09-08 10:58:41,936 [MyQuartz_Worker-3] INFO  Topshelf_Quartz.MyJob - start
+  Topshelf_Quartz.MyJob:2017-09-08 10:58:41,937 [MyQuartz_Worker-3] INFO  Topshelf_Quartz.MyJob - end
+  Topshelf_Quartz.MyJob:2017-09-08 10:58:51,737 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 1235Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 1235Service
+2017-09-08 10:58:51,752 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+2017-09-08 10:58:51,890 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+2017-09-08 10:58:51,896 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+2017-09-08 10:58:52,103 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The 1235Service service is now running, press Control+C to exit.
+2017-09-08 10:58:52,126 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - start
+2017-09-08 10:58:52,126 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - end
+2017-09-08 10:59:02,084 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - start
+2017-09-08 10:59:02,086 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - end
+2017-09-08 11:00:17,056 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 1235Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 1235Service
+2017-09-08 11:00:17,070 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+2017-09-08 11:00:17,192 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+2017-09-08 11:00:17,200 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+2017-09-08 11:00:17,480 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The 1235Service service is now running, press Control+C to exit.
+2017-09-08 11:00:17,502 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - start
+2017-09-08 11:00:17,503 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - end
+2017-09-08 11:00:27,447 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - start
+2017-09-08 11:00:27,449 [MyQuartz_Worker-2] INFO  Topshelf_Quartz.MyJob - end
+2017-09-08 11:06:15,772 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name 1235Service
+[Success] DisplayName 1234Service
+[Success] Description 123Service
+[Success] ServiceName 1235Service
+2017-09-08 11:06:15,786 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.0.0.0, .NET Framework v4.0.30319.42000
+2017-09-08 11:06:15,921 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+2017-09-08 11:06:15,928 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+2017-09-08 11:06:16,122 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The 1235Service service is now running, press Control+C to exit.
+2017-09-08 11:06:16,160 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - start
+2017-09-08 11:06:16,325 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - got it£ºHello World
+2017-09-08 11:06:16,326 [MyQuartz_Worker-1] INFO  Topshelf_Quartz.MyJob - end
